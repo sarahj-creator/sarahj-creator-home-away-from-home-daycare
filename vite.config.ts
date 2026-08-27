@@ -4,12 +4,16 @@ import { fileURLToPath, URL } from 'node:url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/sarahj-creator-home-away-from-home-daycare/',
+
   plugins: [react()],
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
+
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
